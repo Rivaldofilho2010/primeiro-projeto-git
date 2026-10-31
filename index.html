@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor da Casa / Cardápio Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="#inicio">Sabor<span> da Casa.</span></a>
+
+        <button class="menu-mobile" id="menu-mobile" aria-label="Abrir menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navegacao" id="navegacao">
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="carrinho" href="#cardapio">
+            Meu pedido (<span id="contador">0</span>)
+        </a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-conteudo">
+                <p class="etiqueta">FEITO COM CARINHO</p>
+                <h1>Seu próximo prato favorito está aqui.</h1>
+                <p>Ingredientes selecionados, sabor de verdade
+                    e aquele toque especial.</p>
+                <a href="#cardapio" class="botao">Ver cardápio ↓</a>
+            </div>
+        </section>
+
+        <section class="secao-cardapio" id="cardapio">
+            <div class="titulo-secao">
+                <p class="etiqueta">ESCOLHA O SEU FAVORITO</p>
+                <h2>Nosso cardápio</h2>
+                <p>Preparado para deixar seu dia mais gostoso.</p>
+            </div>
+
+            <div class="categorias">
+                <button class="categoria ativa" data-categoria="Todos">Todos</button>
+                <button class="categoria" data-categoria="Hambúrgueres">Hambúrgueres</button>
+                <button class="categoria" data-categoria="Porções">Porções</button>
+                <button class="categoria" data-categoria="Bebidas">Bebidas</button>
+            </div>
+
+            <div class="produtos" id="produtos"></div>
+
+            <div class="resumo-pedido">
+                <p>Itens selecionados: <strong id="quantidade">0</strong></p>
+                <p>Total: <strong id="total">R$ 0,00</strong></p>
+                <button class="botao" id="finalizar">Pedir pelo WhatsApp</button>
+                <p class="aviso">Protótipo: configure o WhatsApp do restaurante no JavaScript.</p>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <p class="etiqueta">NOSSA HISTÓRIA</p>
+            <h2>Mais que uma refeição, uma experiência.</h2>
+            <p>Comida preparada com cuidado, bons ingredientes
+                e muito sabor. Venha conhecer nosso restaurante!</p>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <a class="logo" href="#inicio">Sabor<span> da Casa.</span></a>
+        <p>Endereço: coloque aqui o endereço do restaurante.</p>
+        <p>Horário: confirme os dias e horários de funcionamento.</p>
+        <p>© 2026 Sabor da Casa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
